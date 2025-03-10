@@ -1,0 +1,134 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Lora", serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f8d210;
+}
+
+.hero {
+    background: url('/Latihan 1/image/hero-image.jpeg') no-repeat center center/cover;
+    height: 300px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.categories .list-group-item {
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    transition: transform 0.2s;
+}
+
+.categories .list-group-item:hover {
+    transform: scale(1.05);
+}
+
+.featured-books {
+    flex: 1;
+}
+
+.featured-books .card {
+    transition: transform 0.8s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.featured-books .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.featured-books img {
+    width: 100%;
+    padding: 10px;
+    height: 500px;
+    transition: transform 0.8s ease-in-out;
+    border-radius: 10px;
+}
+
+.featured-books img:hover {
+    transform: scale(1.03);
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .categories ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .featured-books .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .featured-books .col-md-4 {
+        width: 90%;
+    }
+}
+
+.content {
+    flex: 1; 
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
