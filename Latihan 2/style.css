@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+.quiz-container {
+    max-width: 500px;
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+}
+.btn-option {
+    width: 100%;
+    text-align: left;
+}
+.btn-option.correct {
+    background-color: #28a745 !important;
+    color: white;
+}
+.btn-option.wrong {
+    background-color: #dc3545 !important;
+    color: white;
+}
+
+.btn-warning {
+    background-color: #ffa807;
+    color: #000;
+}
